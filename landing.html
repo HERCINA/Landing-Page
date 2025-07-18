@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plateforme Webinaire</title>
+  <link rel="stylesheet" href="landing.css" />
+
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo"><img src="1.png" alt="" style="width: 80px;"></div>
+    <div class="buttons">
+      <button class="btn">Créer un webinaire</button>
+      <button class="btn">Mon compte</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <h1 style="font-size: 4.5rem; ">Bienvenu sur notre plateforme</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ut
+      libero iste facilis incidunt ad temporibus aut excepturi ex porro
+      consectetur dolore totam expedita facere doloribus rem. Dolorem, quia
+      facilis?
+    </p>
+    <button class="btn primary">Créer un webinaire</button>
+  </main>
+  <div class="container">
+    <div class="card">
+      <img src="1.png" alt="" style="width: 435px;">
+      <div class="info">
+        <h2>Formulaire intelligent</h2>
+        <p>Collecte automatisée des infos clés avant le live</p>
+        <button onclick="handleClick('Formulaire intelligent')">Voir Plus ➔</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="1.png" alt="" style="width: 435px;">
+      <div class="info">
+        <h2>Qualification en temps réel</h2>
+        <p>Scoring dynamique selon l’engagement & les réponses</p>
+        <button onclick="handleClick('Qualification en temps réel')">Voir Plus ➔</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="1.png" alt="" style="width: 435px;">
+      <div class="info">
+        <h2>Dashboard CRM-ready</h2>
+        <p>Données exportables vers votre outil de vente</p>
+        <button onclick="handleClick('Dashboard CRM-ready')">Voir Plus ➔</button>
+      </div>
+    </div>
+      <div class="card">
+        <img src="1.png" alt="" style="width: 435px;">
+        <div class="info">
+          <h2>Suivi des conversions</h2>
+          <p>Analyse des leads jusqu’à la prise de RDV ou vente</p>
+          <button onclick="handleClick('Suivi des conversions')">Voir Plus ➔</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="1.png" alt="" style="width: 435px;">
+        <div class="info">
+          <h2>Relances automatiques</h2>
+          <p>E-mails/SMS personnalisés post-webinaire</p>
+          <button onclick="handleClick('Relances automatiques')">Voir Plus ➔</button>
+        </div>
+      </div>
+    </div>
+  
+
+  <section class="testimonial-section">
+    <h2 class="title">Ils génèrent déjà des leads qualifiés avec <br><span>ScoreUsers</span></h2>
+
+    <div class="testimonial-navigation">
+      <button class="arrow left" onclick="prevTestimonial()">&#10094;</button>
+
+      <div class="testimonials-section">
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <div class="avatar"><img src="1.png" alt="Jordan"></div>
+            <p id="quote">"On a doublé notre taux de prise de RDV post-webinaire en 1 mois."</p>
+            <p id="name">Jordan</p>
+            <p id="role">B2B Marketer</p>
+          </div>
+        </div>
+
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <div class="avatar"><img src="1.png" alt="Jordan"></div>
+            <p id="quote">"Avant, on collectait des mails.Maintenat, on close des deals."</p>
+            <p id="name">Michele</p>
+            <p id="role">SaaS Founder</p>
+          </div>
+        </div>
+
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <div class="avatar"><img src="1.png" alt="Jordan"></div>
+            <p id="quote">"Avant, on collectait des mails.Maintenant, on close des deals."</p>
+            <p id="name">Fanck</p>
+            <p id="role">B2B Marketer</p>
+          </div>
+        </div>
+
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <div class="avatar"><img src="1.png" alt="Jordan"></div>
+            <p id="quote">"On a doublé notre taux de prise de RDV post-webinaire en 1 mois."</p>
+            <p id="name">Garnier</p>
+            <p id="role">B2B Marketer</p>
+          </div>
+        </div>
+
+
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <div class="avatar"><img src="1.png" alt="Jordan"></div>
+            <p id="quote">"On a doublé notre taux de prise de RDV post-webinaire en 1 mois."</p>
+            <p id="name">Clement</p>
+            <p id="role">SaaS Founder</p>
+          </div>
+        </div>
+
+
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <div class="avatar"><img src="1.png" alt="Jordan"></div>
+            <p id="quote">"On a doublé notre taux de prise de RDV post-webinaire en 1 mois."</p>
+            <p id="name">Landry</p>
+            <p id="role">B2B Marketer</p>
+          </div>
+        </div>
+      </div>
+
+
+      <button class="arrow right" onclick="nextTestimonial()">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="question">
+    <div class="intro">
+      <h1 style="font-size: 2.5rem;">Questions fréquentes</h1>
+      <p style="font-size: 1.2rem;">Tout ce que vous devez savoir avant de commencer</p>
+    </div>
+    <div class="faq-section">
+
+      <div class="faq-item">
+        <div class="faq-question">Puis-je utiliser ma propre plateforme de webinaire? <span
+            class="arrow-icon">&#8964;</span></div>
+        <div class="faq-answer">
+          Absolument ! Notre solution s'intègre avec toutes les plateformes de webinaire majeures (Zoom,
+          Teams, Webex, etc.) ainsi qu'avec vos outils personnalisés via notre API ouverte.
+
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Est-ce compatible avec mon CRM ? <span class="arrow-icon">&#8964;</span></div>
+        <div class="faq-answer">
+          Nous supportons nativement Salesforce, HubSpot, Pipedrive et tous les CRM compatibles avec les webhooks. Une
+          intégration personnalisée est possible si nécessaire.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Mes données sont-elles sécurisées ?<span class="arrow-icon">&#8964;</span></div>
+        <div class="faq-answer">La sécurité est notre priorité. Nous utilisons un chiffrement de bout en bout, sommes
+          conformes au
+          RGPD et certifiés ISO 27001. Vos données restent 100% votre propriété.
+
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Y a-t-il un plan gratuit ? <span class="arrow-icon">&#8964;</span></div>
+        <div class="faq-answer">Nous proposons un essai gratuit de 14 jours sans engagement. Après cette période, vous
+          pouvez
+          choisir parmi nos différents forfaits adaptés à votre volume de webinaires.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Quel support est inclus ? <span class="arrow-icon">&#8964;</span></div>
+        <div class="faq-answer">Tous nos plans incluent un support par email et chat. Les forfaits Pro et Enterprise
+          bénéficient d'un
+          onboarding personnalisé et d'un support prioritaire.
+
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Puis-je exporter mes données ? <span class="arrow-icon">&#8964;</span></div>
+
+        <div class="faq-answer">Oui, à tout moment. Vous pouvez exporter vos leads et données d'engagement dans
+          plusieurs formats
+          (CSV, JSON) ou les synchroniser automatiquement avec votre stack technique.
+
+        </div>
+      </div>
+
+      <div class="contact">
+        <h4 style="font-size: 1.5rem; margin-top: 10px;">Vous avez d'autres questions ?</h4>
+        <p>Notre équipe se fera un plaisir de vous répondre sous 24h.</p>
+        <button>Contactez-nous</button>
+      </div>
+    </div>
+
+  </section>
+  <script src="landing.js"></script>
+</body>
+
+</html>
