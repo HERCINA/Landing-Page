@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme webinaire</title>
+    <!--<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-[#c1ffd7] text-[#222] leading-relaxed p-0 m-0 box-border">
+    <header class="flex justify-between items-center p-4">
+        <div class="text-xl font-bold "><img src="1.png" alt="" class="w-[80px]  object-contain" />
+        </div>
+
+        <div class="flex gap-2">
+            <button class="px-4 py-2 bg-green-600 text-white rounded-full fonnt-bold text-xl  hover:bg-green-700">Créer
+                un webinaire</button>
+            <button class="px-4 py-2 bg-green-600 text-white rounded-full font-bold text-xl hover:bg-green-700">Mon
+                compte</button>
+        </div>
+    </header>
+    <main class="text-center py-8 px-4">
+        <h1 class="text-[5rem] mb-4 font-bold">Bienvenu sur notre plateforme</h1>
+        <p class="max-w-[600px] mx-auto mb-6 text-[1.8rem] text-gray-800">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ut
+            libero iste facilis incidunt ad temporibus aut excepturi ex porro
+            consectetur dolore totam expedita facere doloribus rem. Dolorem, quia
+            facilis?
+        </p>
+        <button class="text-xl mt-4 px-4 py-2 bg-green-600 text-white rounded-full font-bold">Créer un
+            webinaire</button>
+    </main>
+    <div class="flex flex-wrap gap-6 justify-center p-4 max-w-[1800px]">
+        <div class="flex-[1_1_calc(33.333%_-_3rem)] p-4 box-border">
+            <img src="1.png" alt="" class="rounded-md mb-[-10px] w-[435px] ">
+            <div class="bg-white h-[120px] rounded-md w-[435px]">
+                <h2>Formulaire intelligent</h2>
+                <p>Collecte automatisée des infos clés avant le live</p>
+                <button onclick="handleClick('Formulaire intelligent')"
+                    class="px-4 py-2 bg-green-600 text-white rounded-full font-bold text-xl  hover:bg-green-700">Voir
+                    Plus ➔</button>
+            </div>
+        </div>
+
+        <div class="flex-[1_1_calc(33.333%_-_3rem)] p-4 box-border">
+            <img src="1.png" alt="" class="rounded-md mb-[-10px] w-[435px] ">
+            <div class="bg-white h-[120px] rounded-md w-[435px]">
+                <h2>Qualification en temps réel</h2>
+                <p>Scoring dynamique selon l’engagement & les réponses</p>
+                <button onclick="handleClick('Qualification en temps réel')"
+                    class="px-4 py-2 bg-green-600 text-white rounded-full font-bold text-xl  hover:bg-green-700">Voir
+                    Plus ➔</button>
+            </div>
+        </div>
+
+        <div class="flex-[1_1_calc(33.333%_-_3rem)] p-4 box-border">
+            <img src="1.png" alt="" class="rounded-md mb-[-10px] w-[435px] ">
+            <div class="bg-white h-[120px] rounded-md w-[435px]">
+                <h2>Dashboard CRM-ready</h2>
+                <p>Données exportables vers votre outil de vente</p>
+                <button onclick="handleClick('Dashboard CRM-ready')"
+                    class="px-4 py-2 bg-green-600 text-white rounded-full font-bold text-xl  hover:bg-green-700">Voir
+                    Plus ➔</button>
+            </div>
+        </div>
+        <div class="flex-[1_1_calc(33.333%_-_3rem)] p-4 box-border">
+            <img src="1.png" alt="" class="rounded-md mb-[-10px] w-[435px] ">
+            <div class="bg-white h-[120px] rounded-md w-[435px]">
+                <h2>Suivi des conversions</h2>
+                <p>Analyse des leads jusqu’à la prise de RDV ou vente</p>
+                <button onclick="handleClick('Suivi des conversions')"
+                    class="px-4 py-2 bg-green-600 text-white rounded-full font-bold text-xl  hover:bg-green-700">Voir
+                    Plus ➔</button>
+            </div>
+        </div>
+
+        <div class="flex-[1_1_calc(33.333%_-_3rem)] p-4 box-border">
+            <img src="1.png" alt="" class="rounded-md mb-[-10px] w-[435px] ">
+            <div class="bg-white h-[120px] rounded-md w-[435px]">
+                <h2>Relances automatiques</h2>
+                <p>E-mails/SMS personnalisés post-webinaire</p>
+                <button onclick="handleClick('Relances automatiques')"
+                    class="px-4 py-2 bg-green-600 text-white rounded-full font-bold text-xl  hover:bg-green-700">Voir
+                    Plus ➔</button>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="mt-40px">
+        <h2 class="text-center text-3xl font-bold mb-10 ">Ils génèrent déjà des leads qualifiés avec <br><span
+                class="block text-[40px]">ScoreUsers</span></h2>
+
+        <div class="flex justify-center gap-4">
+            <button class="arrow left" onclick="prevTestimonial()">&#10094;</button>
+
+            <div class="testimonials-section flex overflow-hidden max-w-[1000px] gap-4 h-[300px] ">
+                <div class="bg-white rounded-2xl p-8 min-w-[320px] mx-auto  shadow-md  relative">
+                    <div class="testimonial">
+                        <div class="w-[60px] h-[60px] rounded-full overflow-hidden mx-auto mb-5"><img src="1.png"
+                                alt="Jordan" class="object-cover w-full h-full"></div>
+                        <p id="quote" class="talic text-gray-700">"On a doublé notre taux de prise de RDV post-webinaire
+                            en 1 mois."</p>
+                        <p id="name" class="font-bold mt-2 text-base">Jordan</p>
+                        <p id="role" class="text-gray-500 text-sm">B2B Marketer</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 min-w-[320px] mx-auto shadow-md relative">
+                    <div class="testimonial">
+                        <div class="w-[60px] h-[60px] rounded-full overflow-hidden mx-auto mb-5"><img src="1.png"
+                                alt="Jordan" class="object-cover w-full h-full"></div>
+                        <p id="quote" class="talic text-gray-700">"Avant, on collectait des mails.Maintenat, on close
+                            des deals."</p>
+                        <p id="name" class="font-bold mt-2 text-base">Michele</p>
+                        <p id="role" class="text-gray-500 text-sm">SaaS Founder</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 min-w-[320px] mx-auto shadow-md relative">
+                    <div class="testimonial">
+                        <div class="w-[60px] h-[60px] rounded-full overflow-hidden mx-auto mb-5"><img src="1.png"
+                                alt="Jordan" class="object-cover w-full h-full"></div>
+                        <p id="quote" class="talic text-gray-700">"Avant, on collectait des mails.Maintenant, on close
+                            des deals."</p>
+                        <p id="name" class="font-bold mt-2 text-base">Fanck</p>
+                        <p id="role" class="text-gray-500 text-sm">B2B Marketer</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 min-w-[320px] mx-auto shadow-md relative">
+                    <div class="testimonial">
+                        <div class="w-[60px] h-[60px] rounded-full overflow-hidden mx-auto mb-5"><img src="1.png"
+                                alt="Jordan" class="object-cover w-full h-full"></div>
+                        <p id="quote" class="talic text-gray-700">"On a doublé notre taux de prise de RDV post-webinaire
+                            en 1 mois."</p>
+                        <p id="name" class="font-bold mt-2 text-base">Garnier</p>
+                        <p id="role" class="text-gray-500 text-sm">B2B Marketer</p>
+                    </div>
+                </div>
+
+
+                <div class="bg-white rounded-2xl p-8 min-w-[320px] mx-auto shadow-md relative">
+                    <div class="testimonial">
+                        <div class="w-[60px] h-[60px] rounded-full overflow-hidden mx-auto mb-5"><img src="1.png"
+                                alt="Jordan" class="object-cover w-full h-full"></div>
+                        <p id="quote" class="talic text-gray-700">"On a doublé notre taux de prise de RDV post-webinaire
+                            en 1 mois."</p>
+                        <p id="name" class="font-bold mt-2 text-base">Clement</p>
+                        <p id="role" class="text-gray-500 text-sm">SaaS Founder</p>
+                    </div>
+                </div>
+
+
+                <div class="bg-white rounded-2xl p-8 min-w-[320px] mx-auto shadow-md relative">
+                    <div class="testimonial">
+                        <div class="w-[60px] h-[60px] rounded-full overflow-hidden mx-auto mb-5"><img src="1.png"
+                                alt="Jordan" class="object-cover w-full h-full"></div>
+                        <p id="quote" class="talic text-gray-700">"On a doublé notre taux de prise de RDV post-webinaire
+                            en 1 mois."</p>
+                        <p id="name" class="font-bold mt-2 text-base">Landry</p>
+                        <p id="role" class="text-gray-500 text-sm">B2B Marketer</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="arrow right" onclick="nextTestimonial()">&#10095;</button>
+        </div>
+    </section>
+
+    <section class=" mt-20">
+        <div class="text-center rounded-lg mb-10 ">
+            <h1 class="text-4xl font-bold">Questions fréquentes</h1>
+            <p class="text-xl">Tout ce que vous devez savoir avant de commencer</p>
+        </div>
+        <div class="max-w-[800px] mx-auto bg-[#c1ffd7] p-4 ">
+
+            <div class="faq-item bg-gray-100 rounded-lg shadow-md p-5 mb-4 active open">
+                <div class="faq-question flex justify-between items-center text-xl font-medium cursor-pointer ">Puis-je utiliser ma
+                    propre plateforme de webinaire? <span
+                        class="arrow-icon transform transition duration-300 text-[2.5rem] ">&#8964;</span>
+                </div>
+                <div class="py-15px px-20px bg-gray-100  hidden">
+                    Absolument ! Notre solution s'intègre avec toutes les plateformes de webinaire majeures (Zoom,
+                    Teams, Webex, etc.) ainsi qu'avec vos outils personnalisés via notre API ouverte.
+
+                </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg shadow-md p-5 my-2">
+                <div class="flex justify-between items-center text-xl font-medium cursor-pointer">Est-ce compatible avec
+                    mon CRM ? <span
+                        class="transform transition duration-300  text-[2.5rem] ">&#8964;</span>
+                </div>
+                <div class="py-15px px-20px bg-gray-100 hidden">
+                    Nous supportons nativement Salesforce, HubSpot, Pipedrive et tous les CRM compatibles avec les
+                    webhooks. Une intégration personnalisée est possible si nécessaire.
+                </div>
+            </div>
+
+            <div class="bg-gray-100 rounded-lg shadow-md p-5 my-2">
+                <div class="flex justify-between items-center text-xl font-medium cursor-pointer">Mes données sont-elles
+                    sécurisées ?<span
+                        class="transform transition duration-300  text-[2.5rem] ">&#8964;</span>
+                </div>
+                <div class="py-15px px-20px bg-gray-100 hidden">La sécurité est notre priorité. Nous utilisons un chiffrement
+                    de bout en bout,sommes conformes au
+                    RGPD et certifiés ISO 27001. Vos données restent 100% votre propriété.
+
+                </div>
+            </div>
+
+            <div class="bg-gray-100 rounded-lg shadow-md p-5 my-2">
+                <div class="flex justify-between items-center text-xl font-medium cursor-pointer">Y a-t-il un plan
+                    gratuit ? <span
+                        class="transform transition duration-300 text-[2.5rem] ">&#8964;</span>
+                </div>
+                <div class="py-15px px-20px bg-gray-100 hidden">Nous proposons un essai gratuit de 14 jours sans engagement.
+                    Après cette période, vous pouvez
+                    choisir parmi nos différents forfaits adaptés à votre volume de webinaires.</div>
+            </div>
+
+            <div class="bg-gray-100 rounded-lg shadow-md p-5 my-2">
+                <div class="flex justify-between items-center text-xl font-medium cursor-pointer">Quel support est
+                    inclus ? <span
+                        class="transform transition duration-300  text-[2.5rem] ">&#8964;</span>
+                </div>
+                <div class="py-15px px-20px bg-gray-100 hidden">Tous nos plans incluent un support par email et chat. Les
+                    forfaits Pro et Enterprise bénéficient d'un
+                    onboarding personnalisé et d'un support prioritaire.
+
+                </div>
+            </div>
+
+            <div class="bg-gray-100 rounded-lg shadow-md p-5 my-2">
+                <div class="flex justify-between items-center text-xl font-medium cursor-pointer">Puis-je exporter mes
+                    données ? <span
+                        class="transform transition duration-300  text-[2.5rem] ">&#8964;</span>
+                </div>
+
+                <div class="py-15px px-20px bg-gray-100 hidden">Oui, à tout moment. Vous pouvez exporter vos leads et données
+                    d'engagement dans plusieurs formats
+                    (CSV, JSON) ou les synchroniser automatiquement avec votre stack technique.
+
+                </div>
+            </div>
+
+            <div class="text-center bg-[#f9f9f9] mt-[70px] h-[160px] rounded-[10px] mb-70">
+                <h4 class="text-2xl mt-[10px] font-bold">Vous avez d'autres questions ?</h4>
+                <p class="my-[10px] text-[#555]">Notre équipe se fera un plaisir de vous répondre sous 24h.</p>
+                <button
+                    class="bg-[#13a10e] text-white px-6 py-3 rounded-full cursor-pointer text-base">Contactez-nous</button>
+            </div>
+        </div>
+
+    </section>
+    <script src="landing.js">
+    </script>
+
+</body>
+
+</html>
