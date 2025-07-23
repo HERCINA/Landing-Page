@@ -7,6 +7,18 @@
     <title>Plateforme webinaire</title>
     <!--<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+        }
+
+        
+
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+    </style>
+
 
 </head>
 
@@ -179,69 +191,70 @@
         </div>
         <div class="max-w-[800px] mx-auto bg-[#c1ffd7] p-4 ">
 
-            <div class="faq-item bg-gray-100 rounded-lg shadow-md p-5 mb-4 active open">
-                <div class="faq-question flex justify-between items-center text-xl font-medium cursor-pointer ">Puis-je utiliser ma
+            <div class="faq-item bg-gray-100 rounded-lg shadow-md p-5 mb-4 active  ">
+                <div class="faq-question flex justify-between items-center text-xl font-medium cursor-pointer ">Puis-je
+                    utiliser ma
                     propre plateforme de webinaire? <span
                         class="arrow-icon transform transition duration-300 text-[2.5rem] ">&#8964;</span>
                 </div>
-                <div class="py-15px px-20px bg-gray-100  hidden">
+                <div class="faq-answer py-15px px-20px bg-gray-100 hidden ">
                     Absolument ! Notre solution s'intègre avec toutes les plateformes de webinaire majeures (Zoom,
                     Teams, Webex, etc.) ainsi qu'avec vos outils personnalisés via notre API ouverte.
 
                 </div>
             </div>
-            <div class="bg-gray-100 rounded-lg shadow-md p-5 my-2">
-                <div class="flex justify-between items-center text-xl font-medium cursor-pointer">Est-ce compatible avec
-                    mon CRM ? <span
-                        class="transform transition duration-300  text-[2.5rem] ">&#8964;</span>
+            <div class="faq-item bg-gray-100 rounded-lg shadow-md p-5 my-2">
+                <div class="faq-question flex justify-between items-center text-xl font-medium cursor-pointer">Est-ce
+                    compatible avec
+                    mon CRM ? <span class="arrow-icon transform transition duration-300  text-[2.5rem] ">&#8964;</span>
                 </div>
-                <div class="py-15px px-20px bg-gray-100 hidden">
+                <div class="faq-answer py-15px px-20px bg-gray-100 hidden">
                     Nous supportons nativement Salesforce, HubSpot, Pipedrive et tous les CRM compatibles avec les
                     webhooks. Une intégration personnalisée est possible si nécessaire.
                 </div>
             </div>
 
-            <div class="bg-gray-100 rounded-lg shadow-md p-5 my-2">
-                <div class="flex justify-between items-center text-xl font-medium cursor-pointer">Mes données sont-elles
-                    sécurisées ?<span
-                        class="transform transition duration-300  text-[2.5rem] ">&#8964;</span>
+            <div class="faq-item bg-gray-100 rounded-lg shadow-md p-5 my-2">
+                <div class="faq-question flex justify-between items-center text-xl font-medium cursor-pointer">Mes données sont-elles
+                    sécurisées ?<span class="arrow-icon transform transition duration-300  text-[2.5rem] ">&#8964;</span>
                 </div>
-                <div class="py-15px px-20px bg-gray-100 hidden">La sécurité est notre priorité. Nous utilisons un chiffrement
+                <div class="faq-answer py-15px px-20px bg-gray-100 hidden">La sécurité est notre priorité. Nous utilisons un
+                    chiffrement
                     de bout en bout,sommes conformes au
                     RGPD et certifiés ISO 27001. Vos données restent 100% votre propriété.
 
                 </div>
             </div>
 
-            <div class="bg-gray-100 rounded-lg shadow-md p-5 my-2">
-                <div class="flex justify-between items-center text-xl font-medium cursor-pointer">Y a-t-il un plan
-                    gratuit ? <span
-                        class="transform transition duration-300 text-[2.5rem] ">&#8964;</span>
+            <div class="faq-item bg-gray-100 rounded-lg shadow-md p-5 my-2">
+                <div class="faq-question flex justify-between items-center text-xl font-medium cursor-pointer">Y a-t-il un plan
+                    gratuit ? <span class="arrow-icon transform transition duration-300 text-[2.5rem] ">&#8964;</span>
                 </div>
-                <div class="py-15px px-20px bg-gray-100 hidden">Nous proposons un essai gratuit de 14 jours sans engagement.
+                <div class="faq-answer py-15px px-20px bg-gray-100 hidden">Nous proposons un essai gratuit de 14 jours sans
+                    engagement.
                     Après cette période, vous pouvez
                     choisir parmi nos différents forfaits adaptés à votre volume de webinaires.</div>
             </div>
 
-            <div class="bg-gray-100 rounded-lg shadow-md p-5 my-2">
-                <div class="flex justify-between items-center text-xl font-medium cursor-pointer">Quel support est
-                    inclus ? <span
-                        class="transform transition duration-300  text-[2.5rem] ">&#8964;</span>
+            <div class="faq-item bg-gray-100 rounded-lg shadow-md p-5 my-2">
+                <div class=" faq-question flex justify-between items-center text-xl font-medium cursor-pointer">Quel support est
+                    inclus ? <span class="arrow-icon transform transition duration-300  text-[2.5rem] ">&#8964;</span>
                 </div>
-                <div class="py-15px px-20px bg-gray-100 hidden">Tous nos plans incluent un support par email et chat. Les
+                <div class="faq-answer py-15px px-20px bg-gray-100 hidden">Tous nos plans incluent un support par email et chat.
+                    Les
                     forfaits Pro et Enterprise bénéficient d'un
                     onboarding personnalisé et d'un support prioritaire.
 
                 </div>
             </div>
 
-            <div class="bg-gray-100 rounded-lg shadow-md p-5 my-2">
-                <div class="flex justify-between items-center text-xl font-medium cursor-pointer">Puis-je exporter mes
-                    données ? <span
-                        class="transform transition duration-300  text-[2.5rem] ">&#8964;</span>
+            <div class="faq-item bg-gray-100 rounded-lg shadow-md p-5 my-2">
+                <div class="faq-question flex justify-between items-center text-xl font-medium cursor-pointer">Puis-je exporter mes
+                    données ? <span class="arrow-icon transform transition duration-300  text-[2.5rem] ">&#8964;</span>
                 </div>
 
-                <div class="py-15px px-20px bg-gray-100 hidden">Oui, à tout moment. Vous pouvez exporter vos leads et données
+                <div class="faq-answer py-15px px-20px bg-gray-100 hidden">Oui, à tout moment. Vous pouvez exporter vos leads et
+                    données
                     d'engagement dans plusieurs formats
                     (CSV, JSON) ou les synchroniser automatiquement avec votre stack technique.
 
